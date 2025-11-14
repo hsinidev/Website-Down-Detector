@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Website Down Detector | Is It Down Right Now?</title>
+    <meta name="description" content="Instantly check if a website is down for everyone or just you. Our free, real-time website status checker pings sites from global servers to diagnose outages, check HTTP status codes, and measure response times." />
+    <meta name="keywords" content="website down, down detector, is it down, website status, uptime check, server status, http status codes, outage, downtime" />
+    <meta name="author" content="HSINI MOHAMED">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://downtime-detector.example.com/">
+    <meta property="og:title" content="Website Down Detector | Is It Down Right Now?">
+    <meta property="og:description" content="Instantly check if a website is down for everyone or just you. Our free, real-time website status checker pings sites from global servers to diagnose outages and measure response times.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://downtime-detector.example.com/">
+    <meta property="twitter:title" content="Website Down Detector | Is It Down Right Now?">
+    <meta property="twitter:description" content="Instantly check if a website is down for everyone or just you. Our free, real-time website status checker pings sites from global servers to diagnose outages and measure response times.">
+
+    <!-- Styles and Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0c0a18; /* Fallback background */
+      }
+      .font-orbitron { font-family: 'Orbitron', sans-serif; }
+      .font-roboto-mono { font-family: 'Roboto Mono', monospace; }
+      .animate-fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "url": "https://downtime-detector.example.com/",
+          "name": "Website Down Detector",
+          "description": "Check if a website is down or not with our free, real-time status checker.",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://downtime-detector.example.com/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "WebApplication",
+          "name": "Website Down Detector Tool",
+          "operatingSystem": "All",
+          "applicationCategory": "Utilities",
+          "offers": {
+            "@type": "Offer",
+            "price": "0"
+          }
+        },
+        {
+          "@type": "Article",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://downtime-detector.example.com/"
+          },
+          "headline": "The Ultimate Guide to Website Uptime Monitoring and Server Reliability",
+          "description": "An in-depth guide covering website uptime, HTTP status codes, server reliability, and how to diagnose if a website is truly down.",
+          "author": {
+            "@type": "Person",
+            "name": "HSINI MOHAMED"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Website Down Detector",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://downtime-detector.example.com/logo.png"
+            }
+          },
+          "datePublished": "2023-10-27"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What does it mean if a website is 'down'?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A website is 'down' when it is inaccessible to users. This can be due to server errors (like a 500 Internal Server Error), network problems, or the domain not resolving. Our tool checks the server's HTTP response to determine its status."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does this website down detector work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When you enter a URL, our server sends an HTTP request to that URL, just like a browser would. It then analyzes the response header. If it receives a success code (like 200 OK), the site is UP. If it receives an error code (like 404 Not Found or 503 Service Unavailable) or no response, the site is considered DOWN."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between a local and global outage?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A local outage means the website is inaccessible only to you or users in your specific region, possibly due to your ISP, local network issues, or a regional server problem. A global outage means the website is down for everyone. Our tool simulates checks from different locations to help distinguish between the two."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
